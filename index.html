@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FocusFlow – Productividad sin límites</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAVEGACIÓN -->
+  <header id="navbar">
+    <nav class="nav-container">
+      <div class="logo">Focus<span>Flow</span></div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#caracteristicas">Características</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="btn-cta nav-cta" id="btn-cta-nav" onclick="handleCTA()">Empezar gratis</button>
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content fade-in">
+      <span class="badge">✦ Productividad reinventada</span>
+      <h1>Haz más.<br/>Estrésate menos.<br/><em>Fluye.</em></h1>
+      <p class="hero-sub">FocusFlow organiza tu trabajo, bloquea distracciones y te ayuda a alcanzar tus metas con claridad total.</p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="handleCTA()">Comenzar gratis →</button>
+        <button class="btn-secondary" onclick="scrollToSection('caracteristicas')">Ver cómo funciona</button>
+      </div>
+      <p class="hero-note">✓ Sin tarjeta de crédito &nbsp;·&nbsp; ✓ 14 días gratis &nbsp;·&nbsp; ✓ Cancela cuando quieras</p>
+    </div>
+    <div class="hero-visual fade-in-delay">
+      <div class="app-mockup">
+        <div class="mockup-header">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="mockup-title">Mi día — Martes</span>
+        </div>
+        <div class="mockup-body">
+          <div class="task done">✓ Revisar correos del equipo</div>
+          <div class="task active">⟳ Diseñar prototipo v2</div>
+          <div class="task">◯ Reunión con cliente 3pm</div>
+          <div class="task">◯ Actualizar documentación</div>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <p class="progress-label">2 de 4 tareas completadas · 50%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFICIOS -->
+  <section class="section" id="beneficios">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Beneficios</span>
+        <h2>Todo lo que necesitas para rendir al máximo</h2>
+      </div>
+      <div class="benefits-grid">
+        <article class="benefit-card reveal">
+          <div class="benefit-icon">⚡</div>
+          <h3>10x más rápido</h3>
+          <p>Organiza tu día en segundos con IA que aprende tus hábitos y prioriza automáticamente.</p>
+        </article>
+        <article class="benefit-card reveal">
+          <div class="benefit-icon">🎯</div>
+          <h3>Foco total</h3>
+          <p>Modo concentración que bloquea notificaciones y mide tu tiempo en cada tarea.</p>
+        </article>
+        <article class="benefit-card reveal">
+          <div class="benefit-icon">🤝</div>
+          <h3>Colaboración fluida</h3>
+          <p>Comparte proyectos, asigna tareas y comunícate con tu equipo en un solo lugar.</p>
+        </article>
+        <article class="benefit-card reveal">
+          <div class="benefit-icon">📊</div>
+          <h3>Analítica real</h3>
+          <p>Visualiza tu productividad con reportes detallados y métricas que importan.</p>
+        </article>
+        <article class="benefit-card reveal">
+          <div class="benefit-icon">🔒</div>
+          <h3>Privacidad primero</h3>
+          <p>Tus datos encriptados de extremo a extremo. Nunca los vendemos ni compartimos.</p>
+        </article>
+        <article class="benefit-card reveal">
+          <div class="benefit-icon">🌐</div>
+          <h3>Disponible siempre</h3>
+          <p>Web, iOS y Android sincronizados en tiempo real. Trabaja desde donde quieras.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARACTERÍSTICAS -->
+  <section class="section section-dark" id="caracteristicas">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Características</span>
+        <h2>Diseñado para personas que toman en serio su tiempo</h2>
+      </div>
+      <div class="features-list">
+        <div class="feature-item reveal">
+          <div class="feature-text">
+            <h3>Planificación inteligente con IA</h3>
+            <p>Nuestro motor de IA analiza tus patrones de trabajo y sugiere el orden óptimo de tus tareas según tu energía, deadlines y prioridades. Deja de decidir qué hacer primero.</p>
+            <ul class="feature-bullets">
+              <li>Priorización automática diaria</li>
+              <li>Detección de cuellos de botella</li>
+              <li>Recordatorios contextuales</li>
+            </ul>
+          </div>
+          <div class="feature-visual">
+            <div class="feature-card-ui">
+              <p class="ui-label">🤖 IA sugiere para hoy:</p>
+              <div class="ui-task high">🔴 Entrega propuesta — Alta prioridad</div>
+              <div class="ui-task mid">🟡 Revisión de código — Media</div>
+              <div class="ui-task low">🟢 Leer documentación — Flexible</div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-item reverse reveal">
+          <div class="feature-text">
+            <h3>Modo Flow: concentración profunda</h3>
+            <p>Activa el Modo Flow y FocusFlow bloqueará todas las distracciones, medirá tu tiempo con técnica Pomodoro y te dará un reporte de productividad al terminar.</p>
+            <ul class="feature-bullets">
+              <li>Temporizador Pomodoro integrado</li>
+              <li>Bloqueo de sitios y notificaciones</li>
+              <li>Reporte de sesión automático</li>
+            </ul>
+          </div>
+          <div class="feature-visual">
+            <div class="feature-card-ui timer-ui">
+              <p class="ui-label">🎯 Modo Flow activo</p>
+              <div class="timer-display">24:37</div>
+              <p class="timer-task">Diseñando prototipo v2</p>
+              <div class="timer-bar"><div class="timer-fill"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="section" id="testimonios">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Testimonios</span>
+        <h2>Más de 50,000 personas ya fluyen</h2>
+      </div>
+      <div class="testimonials-grid">
+        <article class="testimonial reveal">
+          <p>"FocusFlow cambió completamente mi forma de trabajar. Ahora termino mi lista de tareas antes del almuerzo."</p>
+          <div class="testimonial-author">
+            <div class="avatar">SM</div>
+            <div>
+              <strong>Sofía Martínez</strong>
+              <span>Diseñadora UX · Bogotá</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial reveal">
+          <p>"Llevaba años buscando una herramienta así. La IA de FocusFlow es increíblemente precisa para priorizar mis proyectos."</p>
+          <div class="testimonial-author">
+            <div class="avatar">CR</div>
+            <div>
+              <strong>Carlos Ruiz</strong>
+              <span>Developer · Medellín</span>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial reveal">
+          <p>"Mi equipo aumentó su productividad un 40% en el primer mes. La función de colaboración es simplemente perfecta."</p>
+          <div class="testimonial-author">
+            <div class="avatar">LP</div>
+            <div>
+              <strong>Laura Peña</strong>
+              <span>CEO Startup · Cali</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE CONTACTO -->
+  <section class="section section-contact" id="contacto">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Contacto</span>
+        <h2>¿Tienes preguntas? Escríbenos</h2>
+      </div>
+      <div class="contact-wrapper reveal">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" placeholder="Tu nombre" />
+            <span class="form-error" id="error-nombre"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" placeholder="tu@correo.com" />
+            <span class="form-error" id="error-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?"></textarea>
+            <span class="form-error" id="error-mensaje"></span>
+          </div>
+          <button type="submit" class="btn-primary btn-full">Enviar mensaje →</button>
+          <div class="form-success" id="form-success">✓ ¡Mensaje enviado! Te contactamos pronto.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="logo">Focus<span>Flow</span></div>
+        <p>Productividad sin límites para equipos modernos.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Producto</h4>
+          <a href="#beneficios">Beneficios</a>
+          <a href="#caracteristicas">Características</a>
+          <a href="#testimonios">Testimonios</a>
+        </div>
+        <div class="footer-col">
+          <h4>Síguenos</h4>
+          <a href="#">Twitter / X</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 FocusFlow. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL CTA -->
+  <div class="modal-overlay" id="modal" onclick="closeModal()">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <h3>🚀 Empieza tu prueba gratis</h3>
+      <p>14 días sin límites. Sin tarjeta de crédito.</p>
+      <input type="email" placeholder="tu@correo.com" class="modal-input"/>
+      <button class="btn-primary btn-full" onclick="closeModal()">Crear cuenta gratis</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
