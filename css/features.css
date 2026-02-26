@@ -1,4 +1,4 @@
-/* ===== DARK MODE ===== */
+/* ===== DARK MODE VARIABLES ===== */
 [data-theme="dark"] {
   --bg: #0d0d0f;
   --bg-section: #111114;
@@ -10,14 +10,31 @@
   --shadow-lg: 0 12px 48px rgba(0,0,0,0.5);
 }
 
-[data-theme="dark"] #navbar.scrolled {
+[data-theme="dark"] body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+[data-theme="dark"] #navbar {
   background: rgba(13,13,15,0.95);
+}
+
+[data-theme="dark"] #navbar.navbar-scrolled,
+[data-theme="dark"] #navbar.scrolled {
+  background: rgba(13,13,15,0.97);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 
 [data-theme="dark"] .benefit-card,
 [data-theme="dark"] .testimonial {
   background: var(--bg-card);
   border-color: var(--border);
+  color: var(--text);
+}
+
+[data-theme="dark"] .benefit-card p,
+[data-theme="dark"] .testimonial p {
+  color: var(--text-muted);
 }
 
 [data-theme="dark"] .section-contact {
@@ -31,8 +48,63 @@
   color: #f0ede8;
 }
 
+[data-theme="dark"] .contact-form label {
+  color: var(--text);
+}
+
+[data-theme="dark"] .app-mockup {
+  background: #1a1a1f;
+  border-color: #2a2a32;
+}
+
+[data-theme="dark"] .mockup-header {
+  background: #111114;
+}
+
+[data-theme="dark"] .task {
+  background: #111114;
+  border-color: #2a2a32;
+}
+
 [data-theme="dark"] footer {
   background: #080808;
+}
+
+[data-theme="dark"] .modal-box {
+  background: #1a1a1f;
+  color: var(--text);
+}
+
+[data-theme="dark"] .modal-box p {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .modal-input {
+  background: #111114;
+  border-color: #2a2a32;
+  color: var(--text);
+}
+
+[data-theme="dark"] .section-header h2 {
+  color: var(--text);
+}
+
+[data-theme="dark"] .badge {
+  color: var(--accent);
+}
+
+[data-theme="dark"] .hero-sub,
+[data-theme="dark"] .hero-note {
+  color: var(--text-muted);
+}
+
+[data-theme="dark"] .btn-secondary {
+  color: var(--text);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] #hoja-de-vida {
+  background: var(--bg);
 }
 
 /* ===== DARK MODE BUTTON ===== */
@@ -47,10 +119,32 @@
   cursor: pointer;
   transition: all 0.3s;
   margin-left: 12px;
+  white-space: nowrap;
 }
 #theme-toggle-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+/* ===== MODAL BUTTON (faltaba) ===== */
+.btn-modal {
+  width: 100%;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  margin-top: 4px;
+}
+.btn-modal:hover {
+  background: var(--accent-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,196,122,0.35);
 }
 
 /* ===== SCROLL ANIMATIONS ===== */
@@ -89,9 +183,13 @@
 .success-animate {
   animation: popIn 0.4s ease both;
 }
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.9) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
 
 /* ===== RIPPLE EFFECT ===== */
-.btn-primary, .btn-secondary {
+.btn-primary, .btn-secondary, .btn-modal {
   position: relative;
   overflow: hidden;
 }
