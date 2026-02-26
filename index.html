@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FocusFlow – Productividad sin límites</title>
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/features.css" />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
 </head>
 <body>
@@ -19,7 +20,9 @@
         <li><a href="#testimonios">Testimonios</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
+      <a href="#hoja-de-vida" class="nav-links" style="font-size:0.95rem;font-weight:500;color:#6b6b6b;margin-right:4px;">CV</a>
       <button class="btn-cta nav-cta" id="btn-cta-nav" onclick="handleCTA()">Empezar gratis</button>
+      <button id="theme-toggle-btn">🌙 Modo Oscuro</button>
       <button class="hamburger" id="hamburger" aria-label="Menú">
         <span></span><span></span><span></span>
       </button>
@@ -249,6 +252,102 @@
     </div>
   </footer>
 
+  <!-- HOJA DE VIDA -->
+  <section class="section" id="hoja-de-vida">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-tag">Equipo</span>
+        <h2>Conoce a los desarrolladores</h2>
+      </div>
+      <div class="cv-grid">
+        <article class="cv-card animate-on-scroll">
+          <div class="cv-avatar">AM</div>
+          <h3>Alejandro Muñoz</h3>
+          <p class="cv-role">Developer 1 — HTML & Dark Mode</p>
+          <div class="cv-info">
+            <span><strong>Ciudad:</strong> Pasto, Colombia</span>
+            <span><strong>Email:</strong> alejandro@email.com</span>
+            <span><strong>Teléfono:</strong> +57 310 000 0001</span>
+          </div>
+          <div class="cv-formacion">
+            <h4>Formación</h4>
+            <ul>
+              <li>Ingeniería de Sistemas — UNAD</li>
+              <li>Curso HTML & CSS — Platzi</li>
+              <li>Git & GitHub — Udemy</li>
+            </ul>
+          </div>
+          <div class="cv-links">
+            <a href="https://github.com/vxillaxl" target="_blank" class="cv-link">GitHub</a>
+          </div>
+        </article>
+        <article class="cv-card animate-on-scroll">
+          <div class="cv-avatar">LP</div>
+          <h3>Laura Pedraza</h3>
+          <p class="cv-role">Developer 2 — Navbar & Links</p>
+          <div class="cv-info">
+            <span><strong>Ciudad:</strong> Bogotá, Colombia</span>
+            <span><strong>Email:</strong> laura@email.com</span>
+            <span><strong>Teléfono:</strong> +57 311 000 0002</span>
+          </div>
+          <div class="cv-formacion">
+            <h4>Formación</h4>
+            <ul>
+              <li>Diseño Web — SENA</li>
+              <li>JavaScript Moderno — Platzi</li>
+              <li>Responsive Design — Coursera</li>
+            </ul>
+          </div>
+          <div class="cv-links">
+            <a href="https://github.com/vxillaxl" target="_blank" class="cv-link">GitHub</a>
+          </div>
+        </article>
+        <article class="cv-card animate-on-scroll">
+          <div class="cv-avatar">CR</div>
+          <h3>Carlos Ruiz</h3>
+          <p class="cv-role">Developer 3 — Formularios</p>
+          <div class="cv-info">
+            <span><strong>Ciudad:</strong> Medellín, Colombia</span>
+            <span><strong>Email:</strong> carlos@email.com</span>
+            <span><strong>Teléfono:</strong> +57 312 000 0003</span>
+          </div>
+          <div class="cv-formacion">
+            <h4>Formación</h4>
+            <ul>
+              <li>Tecnología en Sistemas — UdeA</li>
+              <li>JS Avanzado — freeCodeCamp</li>
+              <li>UX/UI Básico — Google</li>
+            </ul>
+          </div>
+          <div class="cv-links">
+            <a href="https://github.com/vxillaxl" target="_blank" class="cv-link">GitHub</a>
+          </div>
+        </article>
+        <article class="cv-card animate-on-scroll">
+          <div class="cv-avatar">SM</div>
+          <h3>Sofía Mora</h3>
+          <p class="cv-role">Developer 4 — Animaciones CSS</p>
+          <div class="cv-info">
+            <span><strong>Ciudad:</strong> Cali, Colombia</span>
+            <span><strong>Email:</strong> sofia@email.com</span>
+            <span><strong>Teléfono:</strong> +57 313 000 0004</span>
+          </div>
+          <div class="cv-formacion">
+            <h4>Formación</h4>
+            <ul>
+              <li>Ingeniería Multimedia — USC</li>
+              <li>CSS Animations — Udemy</li>
+              <li>Frontend Dev — The Odin Project</li>
+            </ul>
+          </div>
+          <div class="cv-links">
+            <a href="https://github.com/vxillaxl" target="_blank" class="cv-link">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- MODAL CTA -->
   <div class="modal-overlay" id="modal" onclick="closeModal()">
     <div class="modal-box" onclick="event.stopPropagation()">
@@ -261,5 +360,12 @@
   </div>
 
   <script src="js/app.js"></script>
+  <script src="js/dark-mode.js"></script>
+  <script src="js/scroll-animations.js"></script>
+  <script src="js/navbar-behavior.js"></script>
+  <script src="js/active-link.js"></script>
+  <script src="js/form-validation.js"></script>
+  <script src="js/form-animation.js"></script>
+  <script src="js/button-interactions.js"></script>
 </body>
 </html>
